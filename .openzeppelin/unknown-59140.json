@@ -1,0 +1,473 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x0dFc4342FfD744EBB18aa86d34Ce105afeECB05f",
+      "txHash": "0xd573b4d969cd29279dfbe1789b835e07d38865f9112dae47d86cfad6d7e7bea1",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x155f22A39B711d1A8b069BB5582bDD32d058bf2D",
+      "txHash": "0xcc25de484eac28b08158296ace3f18d3da04522e545f1d4d841fbf87caa4f7c2",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "147ac4af00fa552dc1b9bd0e2a0f8cb4df7e8c5a7e7ecf7ac8582580ae3d3c0f": {
+      "address": "0x93dC0643c0d25D4cAFa233EB27bA32EeC3dd4Fb6",
+      "txHash": "0xef13aa5c4b38913ceb996777e060026e8152aedf618b4e3b32370e33ac86db8a",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\PoolManager.sol:211"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\PoolManager.sol:216"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\PoolManager.sol:259"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\PoolManager.sol:263"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\PoolManager.sol:324"
+          },
+          {
+            "label": "poolFactories",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_struct(AddressSet)4440_storage",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1223"
+          },
+          {
+            "label": "_pools",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_struct(AddressSet)4440_storage",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1224"
+          },
+          {
+            "label": "_poolsForVersion",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_uint8,t_struct(AddressSet)4440_storage)",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1225"
+          },
+          {
+            "label": "_poolsOf",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_struct(AddressSet)4440_storage)",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1226"
+          },
+          {
+            "label": "_contributedPoolsOf",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_mapping(t_address,t_struct(AddressSet)4440_storage)",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1227"
+          },
+          {
+            "label": "_poolForToken",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_mapping(t_address,t_address)",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1228"
+          },
+          {
+            "label": "_topPools",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_array(t_struct(TopPoolInfo)5382_storage)dyn_storage",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1229"
+          },
+          {
+            "label": "WETH",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_address",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1231"
+          },
+          {
+            "label": "ethUSDTPool",
+            "offset": 0,
+            "slot": "111",
+            "type": "t_contract(IPancakePair)5215",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1232"
+          },
+          {
+            "label": "totalValueLocked",
+            "offset": 0,
+            "slot": "112",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1233"
+          },
+          {
+            "label": "totalLiquidityRaised",
+            "offset": 0,
+            "slot": "113",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1234"
+          },
+          {
+            "label": "totalParticipants",
+            "offset": 0,
+            "slot": "114",
+            "type": "t_uint256",
+            "contract": "PoolManager",
+            "src": "contracts\\PoolManager.sol:1235"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(TopPoolInfo)5382_storage)dyn_storage": {
+            "label": "struct PoolManager.TopPoolInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IPancakePair)5215": {
+            "label": "contract IPancakePair",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(AddressSet)4440_storage)": {
+            "label": "mapping(address => struct EnumerableSet.AddressSet)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint8,t_struct(AddressSet)4440_storage)": {
+            "label": "mapping(uint8 => struct EnumerableSet.AddressSet)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AddressSet)4440_storage": {
+            "label": "struct EnumerableSet.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)4163_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Set)4163_storage": {
+            "label": "struct EnumerableSet.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(TopPoolInfo)5382_storage": {
+            "label": "struct PoolManager.TopPoolInfo",
+            "members": [
+              {
+                "label": "totalRaised",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "poolAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "2c13de98896c6f4013ab3d476a3310d5e89a7a11f6dea38727ff939f11aaf28e": {
+      "address": "0x69199709d6Be8D9242adC754fdafEF03Ef40E1Fb",
+      "txHash": "0x70da7d34d5223a73d36b6d9e1e16bafa40dbbbbe9b5cf3c15e8e94b46a396199",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\PoolFactory.sol:128"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\PoolFactory.sol:133"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\PoolFactory.sol:176"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\PoolFactory.sol:180"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\PoolFactory.sol:241"
+          },
+          {
+            "label": "master",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:959"
+          },
+          {
+            "label": "privatemaster",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_address",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:960"
+          },
+          {
+            "label": "fairmaster",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:961"
+          },
+          {
+            "label": "poolOwner",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_address",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:964"
+          },
+          {
+            "label": "poolManager",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_address",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:965"
+          },
+          {
+            "label": "version",
+            "offset": 20,
+            "slot": "105",
+            "type": "t_uint8",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:966"
+          },
+          {
+            "label": "kycPrice",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:967"
+          },
+          {
+            "label": "auditPrice",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:968"
+          },
+          {
+            "label": "masterPrice",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:969"
+          },
+          {
+            "label": "privatemasterPrice",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:970"
+          },
+          {
+            "label": "fairmasterPrice",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:971"
+          },
+          {
+            "label": "IsEnabled",
+            "offset": 0,
+            "slot": "111",
+            "type": "t_bool",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:972"
+          },
+          {
+            "label": "contributeWithdrawFee",
+            "offset": 0,
+            "slot": "112",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:973"
+          },
+          {
+            "label": "adminWallet",
+            "offset": 0,
+            "slot": "113",
+            "type": "t_address_payable",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:975"
+          },
+          {
+            "label": "partnerFee",
+            "offset": 0,
+            "slot": "114",
+            "type": "t_uint256",
+            "contract": "PoolFactory",
+            "src": "contracts\\PoolFactory.sol:976"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
